@@ -288,6 +288,40 @@ body {
     margin-bottom: 18px;
 }
 
+/* --- Click for a Surprise Cute Link Design --- */
+.surprise-box {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.surprise-link {
+    display: inline-block;
+    padding: 14px 32px;
+    background: linear-gradient(135deg, #c8e6c9 0%, #fff9c4 100%);
+    color: #1b5e20;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 50px;
+    border: 2px dashed #81c784;
+    box-shadow: 0 6px 18px rgba(46, 125, 50, 0.1);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    letter-spacing: 0.5px;
+    animation: pulseSurprise 2s infinite ease-in-out;
+}
+
+.surprise-link:hover {
+    transform: scale(1.06) translateY(-3px);
+    background: linear-gradient(135deg, #a5d6a7 0%, #fff59d 100%);
+    box-shadow: 0 10px 25px rgba(46, 125, 50, 0.2);
+    border-style: solid;
+}
+
+@keyframes pulseSurprise {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.03); box-shadow: 0 6px 22px rgba(46, 125, 50, 0.15); }
+}
+
 .card-signature {
     text-align: right;
     font-family: 'Playfair Display', serif;
